@@ -12,7 +12,8 @@ return {
       view = {
         relativenumber = false,
         side = 'left',
-	adaptive_size = true;
+	adaptive_size = false,
+	width = 20,
       },
       sync_root_with_cwd = true,
       renderer = {
@@ -39,6 +40,7 @@ return {
       },
       actions = {
         open_file = {
+	    resize_window = false,
           window_picker = {
             enable = false,
           },

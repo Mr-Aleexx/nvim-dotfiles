@@ -13,3 +13,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- Disable persistent highlight 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+local nvim_tree_width = 30  -- default width
+
+vim.keymap.set("n", "<leader>h", "5<C-w><", { desc = "Decrease window width" })
+vim.keymap.set("n", "<leader>l", "5<C-w>>", { desc = "Increase window width" })
