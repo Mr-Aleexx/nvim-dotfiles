@@ -10,7 +10,7 @@ return {
 
     nvimtree.setup {
       view = {
-        relativenumber = false,
+	relativenumber = false,
         side = 'left',
 	adaptive_size = false,
 	width = 20,
@@ -54,7 +54,6 @@ return {
         ignore = false,
       },
     }
-
     local keymap = vim.keymap
 
     keymap.set('n', '<leader>ee', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle file explorer' }) -- toggle file explorer

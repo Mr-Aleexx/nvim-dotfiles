@@ -26,13 +26,14 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-		{"navarasu/onedark.nvim",
-	 	 priority = 1000, 	
-		 config = function()
-				require('onedark').setup {style = 'warmer'} 
-				require('onedark').load()
-  			  end
-		},
+	    {"rebelot/kanagawa.nvim",
+	     priority = 1000, 	
+	     config = function()
+			    require('kanagawa').setup {
+			    } 
+			    require('kanagawa').load()
+		      end
+	    },
 		{ import = "config.plugins" },
   },
 })
