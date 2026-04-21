@@ -12,8 +12,10 @@ return {
       view = {
 	relativenumber = false,
         side = 'left',
-	adaptive_size = false,
-	width = 20,
+	adaptive_size = true,
+	width = {
+	    max = 30,
+	},
       },
       sync_root_with_cwd = true,
       renderer = {
